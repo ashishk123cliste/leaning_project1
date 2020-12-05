@@ -10,6 +10,8 @@ def home_page():
 def hello_world():
     return 'This is admin page!'
 
-
+@app.route('/user')
+def all_user():
+    return 'This web page is for all users'
 
 app.run(debug=True)
